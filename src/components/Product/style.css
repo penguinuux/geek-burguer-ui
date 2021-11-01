@@ -1,10 +1,10 @@
 .products {
 }
 .products__item {
-  width: 300px;
+  width: 100%;
   height: 346px;
-  margin-top: 15px;
-  margin-left: 16px;
+  /* margin-top: 15px;
+  margin-left: 16px; */
 }
 .products__picture {
   background-color: var(--grey-0);
