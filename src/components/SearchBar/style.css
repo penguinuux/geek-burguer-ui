@@ -1,0 +1,30 @@
+.search-bar {
+}
+.search-bar__input {
+  position: relative;
+  width: 90%;
+  height: 60px;
+
+  background: #ffffff;
+
+  border: 2px solid var(--grey-20);
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  padding-left: 15px;
+  padding-top: 2.5px;
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+
+  color: var(--gray-100);
+}
+.search-bar__input:focus {
+  border: 2px var(--grey-100);
+}
+.search-bar__button {
+  float: right;
+  transform: translate(-28px, -50px);
+}

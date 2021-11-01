@@ -12,13 +12,20 @@ const SearchBar = ({ list, setFilteredProducts, setIsSearched }) => {
   };
 
   return (
-    <div>
+    <div className="sarch-bar">
       <input
+        className="search-bar__input"
+        placeholder="Pesquisar Categoria"
         type="text"
         value={inputValue}
         onChange={(event) => setInputValue(event.target.value)}
       />
-      <button onClick={searchProduct}>Pesquisar</button>
+      <button
+        className="search-bar__button button--medium"
+        onClick={searchProduct}
+      >
+        Pesquisar
+      </button>
     </div>
   );
 };

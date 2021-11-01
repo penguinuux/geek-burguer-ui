@@ -1,12 +1,60 @@
 .button {
-  width: 130px;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+
+  /* position: absolute; */
+  width: 106px;
   height: 60px;
-  background-color: var(--color-primary);
+  left: 20px;
+  top: 133px;
+
+  background: var(--color-primary);
+
+  border: 2px var(--color-primary);
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 .button--medium {
-  width: 130px;
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+
+  /* position: absolute; */
+  width: 106px;
   height: 40px;
-  background-color: var(--color-primary);
+  left: 20px;
+  top: 133px;
+
+  background: var(--color-primary);
+
+  border: 2px var(--color-primary);
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 .variation {
   background-color: var(--color-primary-50);

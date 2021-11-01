@@ -1,38 +1,101 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: #f5f5f5;
+  height: 139px;
+}
+.App-header__header {
+}
+.App-header__title {
+  height: 37px;
+  padding-top: 14px;
+  margin-bottom: 14px;
+}
+.menu-display {
+}
+.cart-display {
+  width: 90%;
+  margin: 0 auto;
+}
+.cart-display__title {
+  height: 65px;
+  background-color: var(--color-primary);
+  border-radius: 5px 5px 0px 0px;
+
+  padding-top: 22px;
+  padding-left: 21px;
+  text-align: left;
+
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  color: #ffffff;
+}
+.cart-display__products {
+  background-color: var(--grey-0);
+  height: auto;
+  min-height: 158px;
+}
+.cart-display__message-title {
+  padding: 33px 0 5.5px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  text-align: center;
+
+  color: var(--grey-100);
+}
+.cart-display__message-paragraph {
+  color: var(--grey-50);
+  display: block;
+}
+.cart-display__carousel {
+}
+
+.cart-display__total {
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+.cart-display__total-number {
+  color: var(--grey-50);
+}
+.cart-display__remove-button {
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: var(--grey-50);
+
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
 
-.App-link {
-  color: #61dafb;
-}
+  /* position: absolute; */
+  width: 100%;
+  height: 60px;
+  left: 20px;
+  top: 133px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: 0 auto;
+
+  background: var(--grey-20);
+
+  border: 2px var(--grey-20);
+  box-sizing: border-box;
+  border-radius: 8px;
 }
