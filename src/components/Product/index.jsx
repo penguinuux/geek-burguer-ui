@@ -1,3 +1,5 @@
+import "./style.css";
+
 const Product = ({ products, handleClick }) => {
   return (
     <ul>

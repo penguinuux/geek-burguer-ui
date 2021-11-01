@@ -1,0 +1,14 @@
+:root {
+  /* PRIMARY PALETTE */
+  --color-primary: #27ae60;
+  --color-primary-50: #93d7af;
+  --color-secondary: #eb5757;
+  /* GREY SCALE PALETTE */
+  --gray-100: #333333;
+  --grey-50: #828282;
+  --grey-20: #e0e0e0;
+  /* FEEDBACK PALETTE */
+  --negative: #e60000;
+  --warning: #ffcd07;
+  --sucess: #168821;
+}

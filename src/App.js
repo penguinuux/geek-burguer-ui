@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 import "./App.css";
+import "./reset.css";
+import "./standardColors.css";
 
 import MenuContainer from "./components/MenuContainer";
 import Product from "./components/Product";

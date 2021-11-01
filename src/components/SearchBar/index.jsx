@@ -1,12 +1,13 @@
 import { useState } from "react";
 
+import "./style.css";
+
 const SearchBar = ({ list, setFilteredProducts, setIsSearched }) => {
   const [inputValue, setInputValue] = useState("");
   if (inputValue.length === 0) setIsSearched(false);
 
   const searchProduct = () => {
     inputValue.length > 0 && setIsSearched(true);
-    const filter = list.filter(({ category }) => category === inputValue);
     setFilteredProducts(list.filter(({ category }) => category === inputValue));
   };
 
