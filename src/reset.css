@@ -1,0 +1,31 @@
+/* RESET */
+h1,
+h2,
+h3,
+div,
+ul,
+li,
+span {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* BODY */
+body {
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+}

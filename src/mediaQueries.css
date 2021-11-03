@@ -1,0 +1,64 @@
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 115px;
+
+    height: 100vh;
+  }
+
+  .App-header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 115px;
+  }
+
+  .App-header__title {
+    padding-left: 100px;
+  }
+
+  .search-bar {
+    right: 115px;
+  }
+
+  .search-bar__input {
+  }
+
+  .search-bar__button {
+    /* float: right;
+    transform: translate(-119px, 10px); */
+  }
+
+  .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .cart-display {
+    min-width: 325px;
+    max-width: 365px;
+    margin-top: 26px;
+    margin-bottom: 65px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .card-slide__flex {
+    overflow-x: unset;
+    flex-wrap: wrap;
+    height: 100%;
+    align-content: flex-start;
+  }
+
+  .products__item {
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+}

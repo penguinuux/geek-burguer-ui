@@ -1,0 +1,5 @@
+.card-slide__flex {
+  overflow-x: scroll;
+  display: flex;
+  padding-left: 16px;
+}
