@@ -1,11 +1,11 @@
 import { useState } from "react";
 
+import "./mediaQueries.css";
 import "./App.css";
 import "./reset.css";
 import "./standardColors.css";
 
 import MenuContainer from "./components/MenuContainer";
-import Product from "./components/Product";
 import SearchBar from "./components/SearchBar";
 import Cart from "./components/Cart";
 
@@ -114,14 +114,13 @@ const App = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [currentSale, setCurrentSale] = useState([]);
   const [isSearched, setIsSearched] = useState(false);
-
-  const showProducts = (list) => {
-    return <Product products={list} handleClick={handleClick} />;
-  };
+  const [userSearch, setUserSearch] = useState("");
 
   const handleClick = (productId) => {
-    const selectedProduct = products.filter(({ id }) => id === productId);
-    setCurrentSale([...currentSale, ...selectedProduct]);
+    if (currentSale.find((element) => element.id === productId) === undefined) {
+      const selectedProduct = products.filter(({ id }) => id === productId);
+      setCurrentSale([...currentSale, ...selectedProduct]);
+    }
   };
 
   const removeItem = (indexToRemove) => {
@@ -153,23 +152,30 @@ const App = () => {
     <div className="App">
       <div className="App-header">
         <header className="App-header__header">
-          <h1 className="App-header__title">Geek Burguer</h1>
+          <h1 className="App-header__title">Geek</h1>
         </header>
         <SearchBar
           list={products}
           setFilteredProducts={setFilteredProducts}
           setIsSearched={setIsSearched}
+          setUserSearch={setUserSearch}
         />
       </div>
       <main>
         <section className="menu-display">
           {isSearched === false ? (
-            <MenuContainer list={products} showProducts={showProducts} />
+            <MenuContainer list={products} handleClick={handleClick} />
           ) : (
-            <MenuContainer
-              list={filteredProducts}
-              showProducts={showProducts}
-            />
+            <>
+              <h2 className="menu-display__search-message">
+                Resultados para:{" "}
+                <span className="menu-display__text">{userSearch}</span>
+              </h2>
+              <MenuContainer
+                list={filteredProducts}
+                handleClick={handleClick}
+              />
+            </>
           )}
         </section>
         <section className="cart-display">

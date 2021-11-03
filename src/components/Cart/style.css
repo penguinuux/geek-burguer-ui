@@ -7,6 +7,8 @@
   flex-direction: row;
   justify-content: flex-start;
 
+  position: relative;
+
   margin: 21px 0 0 18px;
 }
 .cart-list__picture {
@@ -38,8 +40,15 @@
   margin: 0;
   color: var(--grey-50);
 }
-.cart-list__removeSpan {
+.cart-list__remove-span {
   position: absolute;
-  transform: translate(150px, -45px);
+  right: 16px;
+  font-size: 12px;
+  top: 8px;
   color: var(--grey-50);
+}
+.cart-list__remove-span:hover {
+  transform: scale(105%);
+  color: var(--negative);
+  cursor: pointer;
 }

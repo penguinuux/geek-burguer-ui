@@ -15,7 +15,6 @@
   align-items: center;
   padding: 0px 20px;
 
-  /* position: absolute; */
   width: 106px;
   height: 60px;
   left: 20px;
@@ -27,6 +26,11 @@
   box-sizing: border-box;
   border-radius: 8px;
 }
+
+.button--medium:active {
+  transform: scale(95%);
+}
+
 .button--medium {
   font-family: "inter", sans-serif;
   font-size: 14px;
@@ -56,15 +60,19 @@
   box-sizing: border-box;
   border-radius: 8px;
 }
+
 .variation {
   background-color: var(--color-primary-50);
 }
+
 .variation:hover {
   background-color: var(--grey-50);
 }
+
 .button:hover {
-  background-color: var(--grey-20);
+  background-color: var(--color-primary-50);
 }
+
 .button--medium:hover {
-  background-color: var(--grey-20);
+  background-color: var(--color-primary-50);
 }

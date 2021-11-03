@@ -13,7 +13,7 @@ const Cart = ({ currentSale, removeItem }) => {
               <h3 className="cart-list__name">{name}</h3>
               <p className="cart-list__category">{category}</p>
               <span
-                className="cart-list__removeSpan"
+                className="cart-list__remove-span"
                 onClick={() => removeItem(index)}
               >
                 Remover
