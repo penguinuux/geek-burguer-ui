@@ -55,6 +55,7 @@
   background-color: var(--grey-0);
   height: auto;
   min-height: 158px;
+  padding: 0 10px 20px;
 }
 
 .cart-display__message-title {
@@ -121,7 +122,8 @@
 }
 
 .cart-display__remove-button:hover {
-  background-color: (var--grey-50);
+  background-color: var(--grey-50);
+  color: var(--grey-0);
 }
 
 .cart-display__remove-button:active {

@@ -9,7 +9,7 @@ const Card = ({ id, name, category, price, img, handleClick }) => {
       <div className="products__info">
         <h3 className="products__name">{name}</h3>
         <p className="products__category">{category}</p>
-        <span className="products__price">{price.toFixed(2)}</span>
+        <span className="products__price">R$ {price.toFixed(2)}</span>
         <button className="button--medium" onClick={() => handleClick(id)}>
           Adicionar
         </button>
