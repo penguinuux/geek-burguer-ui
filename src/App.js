@@ -10,7 +10,7 @@ import SearchBar from "./components/SearchBar";
 import Cart from "./components/Cart";
 
 const App = () => {
-  const [products, setProducts] = useState([
+  const [products] = useState([
     {
       id: 1,
       name: "Supremo Kenzie",
