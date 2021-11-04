@@ -32,6 +32,10 @@
     transform: translate(-119px, 10px); */
   }
 
+  .menu-display {
+    width: 80%;
+  }
+
   .products {
     display: flex;
     flex-direction: row;

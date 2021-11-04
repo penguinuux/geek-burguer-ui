@@ -3,3 +3,11 @@
   display: flex;
   padding-left: 16px;
 }
+.card-slide__flex::-webkit-scrollbar {
+  display: none;
+}
+
+.card-slide__flex {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

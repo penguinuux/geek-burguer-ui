@@ -69,7 +69,7 @@ const App = () => {
     },
     {
       id: 9,
-      name: "Triple burguer",
+      name: "Triple Burguer",
       category: "Sanduíches",
       price: 17.99,
       img: "https://i.ibb.co/hHpCmGt/77381-king-whopper-hamburger-big-veggie-burger-thumb.png",
@@ -168,8 +168,8 @@ const App = () => {
           ) : (
             <>
               <h2 className="menu-display__search-message">
-                Resultados para:{" "}
-                <span className="menu-display__text">{userSearch}</span>
+                Resultados para:
+                <span className="menu-display__text"> "{userSearch}"</span>
               </h2>
               <MenuContainer
                 list={filteredProducts}
