@@ -9,6 +9,7 @@ const Product = ({ products, handleClick }) => {
       {products.map(({ id, name, category, price, img }) => {
         return (
           <Card
+            key={id}
             name={name}
             id={id}
             category={category}

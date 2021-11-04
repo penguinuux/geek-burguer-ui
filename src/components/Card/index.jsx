@@ -2,7 +2,7 @@ import "./style.css";
 
 const Card = ({ id, name, category, price, img, handleClick }) => {
   return (
-    <div className="products__item" key={id}>
+    <div className="products__item">
       <div className="products__picture">
         <img src={img} alt={name} />
       </div>
